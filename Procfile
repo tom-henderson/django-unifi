@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath {{project_name}} {{project_name}}.wsgi --log-file -
+web: gunicorn --pythonpath django_unifi django_unifi.wsgi --log-file -
