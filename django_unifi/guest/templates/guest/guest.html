@@ -1,0 +1,60 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "head.html" %}
+  <style type="text/css">
+    body {
+        background: url({% static 'images/background.jpg' %}) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+<form action="#" method="post" class="form-horizontal modal show" id="filter-form">
+    {% csrf_token %}
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Guest WiFi</h4>
+        </div>
+        <div class="modal-body">
+    
+            {% if form.errors %}
+            <div class="row">
+            <div class="alert alert-warning alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <p>Incorrect username or password. Please try again.</p>
+            </div>
+            </div>
+            {% endif %}
+    
+            <div class="form-group">
+            <label class="col-sm-3 control-label" for="username">Passcode</label>
+            <div class="col-sm-9" id="username">
+                <input type="text" class="form-control" id="username" name="username" placeholder="Passcode">
+            </div>
+            </div>
+    
+            <input type="hidden" name="next" value="{{ next }}" />
+    
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Log in</button>
+        </div>
+        </div>
+    </div>
+</form>
+
+{% include "tail.html" %}
+
+</body>
+</html>
+
