@@ -7,14 +7,3 @@ whitenoise==4.1.2
 django-npm==1.0.0
 
 git+https://github.com/tom-henderson/django-common
-
-# Tagging
-# Taggit Helpers: TaggitCounter, TaggitListFilter
-# Taggit Templatetags: Template tags for tags - https://github.com/feuervogel/django-taggit-templatetags
-# django-taggit==0.24.0
-# django-taggit-helpers==0.1.4
-
-# Django REST Framework
-# Taggit Serializer: Serializer for the Django REST Framework
-# djangorestframework==3.9.2
-# django-taggit-serializer==0.1.7

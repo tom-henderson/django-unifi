@@ -123,10 +123,6 @@ DJANGO_APPS = (
 
 THIRD_PARTY_APPS = (
     'django_common',
-    # 'taggit',
-    # 'taggit_helpers',
-    # 'rest_framework',
-    # 'taggit_serializer',
 )
 
 LOCAL_APPS = (
