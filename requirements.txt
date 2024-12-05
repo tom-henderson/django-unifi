@@ -1,5 +1,5 @@
 Django==3.2.9
-six==1.16.0
+six==1.17.0
 sqlparse==0.4.2
 
 # Whitenoise: Staticfile hosting
